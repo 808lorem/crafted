@@ -1,5 +1,6 @@
 .header {
 	background-image: url(../img/general/header__bg.jpg);
+	min-width: 940px;
 	height: 180px;
 	position: relative;
 	&:before {
@@ -133,8 +134,9 @@
 			}
 		}
 		&_submit {
-			@include sprite($s-header_icon_search);
-			background-position: -78px -29px;
+			background-image: url(../img/sprite/header_icon_search.png);
+			background-repeat: no-repeat;
+			background-position: 7px;
 			width: 11px;
 			height: 11px;
 			padding: 12.5px 11.5px;

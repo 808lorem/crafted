@@ -1,0 +1,86 @@
+.slider {
+	padding: 42px 0;
+	&__wrap {
+		width: 928px;
+		height: 270px;
+		margin: 0 auto;
+		position: relative;
+		z-index: 0;
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: white;
+			z-index: -1;
+		}
+		&:after {
+			content: '';
+			display: block;
+			background: url(../img/general/slider_border-bt.png);
+			width: 907px;
+			height: 21px;
+			bottom: -11px;
+			position: absolute;
+			z-index: -2;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	&__arrow {
+		position: absolute;
+		z-index: 1;
+		cursor: pointer;
+		top: 75%;
+		color: #f0f0e7;
+		text-transform: uppercase;
+		font-family: $fontOswald;
+		text-align: center;
+		&:after {
+			display: block;
+			padding: 8px 0;
+		}
+		&_prev {
+			@include sprite($s-slider_prev);
+			left: -10px;
+			&:after {
+				content: 'prev.';
+			}
+		}
+		&_next {
+			@include sprite($s-slider_next);
+			right: -10px;
+			&:after {
+				content: 'next';
+			}
+		}
+	}
+	&__img {
+		width: 908px;
+		height: 250px;
+		object-fit: none;
+		object-position: top;
+	}
+	.slick-dots {
+		bottom: -44px;
+		li {
+			button {
+				background-color:  rgba(0, 0, 0, 0);
+				background-color:  rgba(0, 0, 0, 0.06);
+				box-shadow: inset 1px -1px 0px 0px #ffffff, inset -1px 1px 0px 0px #000;
+				width: 14px;
+				height: 14px;
+				border-radius: 50%;
+				&:before {
+					content: '';
+				}
+			}
+		}
+	}
+}
+
+.js-slick__slider {
+	padding: 10px;
+}
+

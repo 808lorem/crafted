@@ -94,6 +94,12 @@ button {
 	margin: 0 auto;
 }
 
+.wrapper {
+	width: 100%;
+	height: auto;
+	background-image: url(../img/general/wrapper_bg.jpg);
+}
+
 *::-webkit-input-placeholder {
 	opacity: 1;
 }
