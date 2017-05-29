@@ -17,15 +17,17 @@
 @import '_common_styles';
 
 // Стили шапки
-@import 'modules/_header';
+@import 'sections/_header';
 
-@import 'modules/_slider';
+@import 'sections/_slider';
+
+@import 'sections/_content';
 
 // Стили главной страницы
 @import 'page/_index';
 
 // Стили футера
-@import 'modules/_footer';
+@import 'sections/_footer';
 
 // Стили медиазапросов
 @import '_media';

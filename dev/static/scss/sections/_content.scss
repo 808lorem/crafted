@@ -1,0 +1,46 @@
+.content {
+	padding: 28px 0;
+	&__box {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__block {
+		background: url(../img/general/content-block-bg.png);
+		box-sizing: border-box;
+		background-color:  #f0f0e7;
+		width: 223px;
+		height: 308px;
+		border-width: 2px;
+		border-style: solid;
+		border-image: url(../img/general/border_dashed.png) 2 round;
+		position: relative;
+		&_title {
+			@include sprite($s-title-bg);
+			position: absolute;
+			left: -11px;
+			top: 21px;
+			color:  #e4e4db;
+			font-size: 1.625rem;
+			font-weight: 400;
+			text-transform: uppercase;
+			font-family: $fontOswald;
+			padding: 4px 0 0 20px;
+		}
+		&.more {
+			width: 425px;
+			height: 308px;
+			.content__block {
+				&_title {
+					@include sprite($s-title-bg2);
+					left: -17px;
+					top: 13px;
+					color:  #ffffff;
+					font-size: 1.875rem;
+					font-weight: 400;
+					text-shadow: 0px 1px 0px #1f4457;
+					padding: 5px 0 0 32px
+				}
+			}
+		}
+	}
+}

@@ -9,7 +9,6 @@ $(document).ready(function(){
 	
 	$('.js-slick__slider').slick({
 		dots: true,
-		infinite: false,
 		speed: 300,
 		nextArrow: '.slider__arrow_next',
 		prevArrow: '.slider__arrow_prev',

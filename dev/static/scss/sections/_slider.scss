@@ -1,5 +1,26 @@
 .slider {
-	padding: 42px 0;
+	padding: 42px 0 42+23px;
+	position: relative;
+	&:before {
+		content: '';
+		display: block;
+		height: 2px;
+		width: 100%;
+		position: absolute;
+		top: 3px;
+		background: url(../img/general/border_dashed.png);
+	}
+	&:after {
+		content: '';
+		display: block;
+		height: 2px;
+		width: 940px;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		background: url(../img/general/border_dashed.png);
+	}
 	&__wrap {
 		width: 928px;
 		height: 270px;
