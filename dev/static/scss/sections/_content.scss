@@ -7,19 +7,36 @@
 	&__block {
 		background: url(../img/general/content-block-bg.png);
 		box-sizing: border-box;
-		background-color:  #f0f0e7;
+		background-color: #f0f0e7;
 		width: 223px;
 		height: 308px;
 		border-width: 2px;
 		border-style: solid;
 		border-image: url(../img/general/border_dashed.png) 2 round;
 		position: relative;
+		padding: 63px 15px 13px;
+		&:before {
+			content: '';
+			display: block;
+			@include sprite($s-corner-left);
+			position: absolute;
+			bottom: -3px;
+			left: -3px;
+		}
+		&:after {
+			content: '';
+			display: block;
+			@include sprite($s-corner-right);
+			position: absolute;
+			bottom: -3px;
+			right: -3px;
+		}
 		&_title {
 			@include sprite($s-title-bg);
 			position: absolute;
 			left: -11px;
 			top: 21px;
-			color:  #e4e4db;
+			color: #e4e4db;
 			font-size: 1.625rem;
 			font-weight: 400;
 			text-transform: uppercase;
@@ -34,12 +51,60 @@
 					@include sprite($s-title-bg2);
 					left: -17px;
 					top: 13px;
-					color:  #ffffff;
+					color: #ffffff;
 					font-size: 1.875rem;
 					font-weight: 400;
 					text-shadow: 0px 1px 0px #1f4457;
 					padding: 5px 0 0 32px
 				}
+			}
+		}
+		&_descr {
+			display: block;
+			font-family: $mainFont;
+			color: #aba890;
+			font-size: 0.875rem;
+			font-weight: 700;
+			font-style: italic;
+			margin-bottom: 25px;
+		}
+		&_text {
+			font-family: $mainFont;
+			color: #616161;
+			font-size: 0.75rem;
+			font-weight: 400;
+			margin-bottom: 20px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			&.block-italic {
+				font-weight: 700;
+				font-style: italic;
+			}
+		}
+		&_link {
+			display: block;
+			@include sprite($s-content-btn);
+			color:  #f0f0e7;
+			font-size: 0.875rem;
+			font-weight: 400;
+			text-align: center;
+			padding: 7px 0;
+			font-family: $fontOswald;
+			position: absolute;
+			bottom: 15px;
+			right: 13px;
+		}
+		&_img {
+			display: inline-block;
+			border-style: solid;
+			border-width: 4px;
+			border-image: url(../img/general/content-border.png);
+			border-image-repeat: round;
+			border-image-slice: 4;
+			margin-right: 15px;
+			img {
+				border: 2px solid white;
 			}
 		}
 	}

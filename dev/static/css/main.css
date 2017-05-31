@@ -796,7 +796,7 @@ button {
         content: '';
         display: block;
         background-image: url("../img/sprite/sprite.png");
-        background-position: -202px -115px;
+        background-position: -419px -115px;
         width: 21px;
         height: 22px;
         position: absolute;
@@ -847,22 +847,22 @@ button {
       margin-left: 6px; }
       .header__social_link_email {
         background-image: url("../img/sprite/sprite.png");
-        background-position: -401px -61px;
+        background-position: -174px -115px;
         width: 28px;
         height: 28px; }
       .header__social_link_rss {
         background-image: url("../img/sprite/sprite.png");
-        background-position: 0px -115px;
+        background-position: -217px -115px;
         width: 27px;
         height: 27px; }
       .header__social_link_fb {
         background-image: url("../img/sprite/sprite.png");
-        background-position: -83px -115px;
+        background-position: -259px -115px;
         width: 26px;
         height: 27px; }
       .header__social_link_twitter {
         background-image: url("../img/sprite/sprite.png");
-        background-position: -42px -115px;
+        background-position: -300px -115px;
         width: 26px;
         height: 27px; }
   .header__form {
@@ -994,7 +994,7 @@ button {
       padding: 8px 0; }
     .slider__arrow_prev {
       background-image: url("../img/sprite/sprite.png");
-      background-position: -227px -61px;
+      background-position: 0px -115px;
       width: 72px;
       height: 39px;
       left: -10px; }
@@ -1002,7 +1002,7 @@ button {
         content: 'prev.'; }
     .slider__arrow_next {
       background-image: url("../img/sprite/sprite.png");
-      background-position: -314px -61px;
+      background-position: -87px -115px;
       width: 72px;
       height: 39px;
       right: -10px; }
@@ -1055,7 +1055,28 @@ button {
     -webkit-border-image: url(../img/general/border_dashed.png) 2 round;
          -o-border-image: url(../img/general/border_dashed.png) 2 round;
             border-image: url(../img/general/border_dashed.png) 2 round;
-    position: relative; }
+    position: relative;
+    padding: 63px 15px 13px; }
+    .content__block:before {
+      content: '';
+      display: block;
+      background-image: url("../img/sprite/sprite.png");
+      background-position: -341px -115px;
+      width: 24px;
+      height: 23px;
+      position: absolute;
+      bottom: -3px;
+      left: -3px; }
+    .content__block:after {
+      content: '';
+      display: block;
+      background-image: url("../img/sprite/sprite.png");
+      background-position: -380px -115px;
+      width: 24px;
+      height: 23px;
+      position: absolute;
+      bottom: -3px;
+      right: -3px; }
     .content__block_title {
       background-image: url("../img/sprite/sprite.png");
       background-position: 0px -61px;
@@ -1085,6 +1106,114 @@ button {
         font-weight: 400;
         text-shadow: 0px 1px 0px #1f4457;
         padding: 5px 0 0 32px; }
+    .content__block_descr {
+      display: block;
+      font-family: "Arial", sans-serif;
+      color: #aba890;
+      font-size: 0.875rem;
+      font-weight: 700;
+      font-style: italic;
+      margin-bottom: 25px; }
+    .content__block_text {
+      font-family: "Arial", sans-serif;
+      color: #616161;
+      font-size: 0.75rem;
+      font-weight: 400;
+      margin-bottom: 20px; }
+      .content__block_text:last-child {
+        margin-bottom: 0; }
+      .content__block_text.block-italic {
+        font-weight: 700;
+        font-style: italic; }
+    .content__block_link {
+      display: block;
+      background-image: url("../img/sprite/sprite.png");
+      background-position: -227px -61px;
+      width: 93px;
+      height: 30px;
+      color: #f0f0e7;
+      font-size: 0.875rem;
+      font-weight: 400;
+      text-align: center;
+      padding: 7px 0;
+      font-family: "Oswald", "Arial", sans-serif;
+      position: absolute;
+      bottom: 15px;
+      right: 13px; }
+    .content__block_img {
+      display: inline-block;
+      border-style: solid;
+      border-width: 4px;
+      -webkit-border-image: url(../img/general/content-border.png);
+           -o-border-image: url(../img/general/content-border.png);
+              border-image: url(../img/general/content-border.png);
+      border-image-repeat: round;
+      border-image-slice: 4;
+      margin-right: 15px; }
+      .content__block_img img {
+        border: 2px solid white; }
+
+.slider-bt {
+  padding: 35px 0 31px;
+  background: url(../img/general/slider-bt_bg.jpg);
+  position: relative; }
+  .slider-bt:before {
+    content: '';
+    display: block;
+    background-image: url(../img/general/border_dashed.png);
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 0; }
+  .slider-bt__box {
+    width: 900px;
+    margin: 0 auto;
+    position: relative; }
+  .slider-bt__arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+    .slider-bt__arrow_prev {
+      left: -28px;
+      background-image: url("../img/sprite/sprite.png");
+      background-position: -335px -61px;
+      width: 45px;
+      height: 25px; }
+      .slider-bt__arrow_prev:after {
+        content: '<';
+        display: block;
+        font-family: "Arial", sans-serif;
+        color: #f0f0e7;
+        font-size: 0.875rem;
+        font-weight: 400;
+        letter-spacing: -0.026rem;
+        padding: 3px 13px; }
+    .slider-bt__arrow_next {
+      right: -28px;
+      background-image: url("../img/sprite/sprite.png");
+      background-position: -395px -61px;
+      width: 44px;
+      height: 25px; }
+      .slider-bt__arrow_next:after {
+        content: '>';
+        display: block;
+        font-family: "Arial", sans-serif;
+        color: #f0f0e7;
+        font-size: 0.875rem;
+        font-weight: 400;
+        letter-spacing: -0.026rem;
+        padding: 3px 23px; }
+  .slider-bt__link img {
+    width: 134px;
+    height: 80px;
+    border: 2px solid white;
+    -o-object-fit: none;
+       object-fit: none;
+    -o-object-position: center;
+       object-position: center; }
 
 footer {
   height: 1000px; }
