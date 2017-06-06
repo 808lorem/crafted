@@ -22,13 +22,13 @@
 		top: 50%;
 		transform: translateY(-50%);
 		&_prev {
-			left: -28px;
+			left: -20px;
 			@include sprite($s-slider-bt_prev);
 			&:after {
 				content: '<';
 				display: block;
 				font-family: $mainFont;
-				color: #f0f0e7;
+				color: $colorBtn;
 				font-size: 0.875rem;
 				font-weight: 400;
 				letter-spacing: -0.026rem;
@@ -36,27 +36,24 @@
 			}
 		}
 		&_next {
-			right: -28px;
+			right: -20px;
 			@include sprite($s-slider-bt_next);
 			&:after {
+				@extend .slider-bt__arrow_prev:after;
 				content: '>';
-				display: block;
-				font-family: $mainFont;
-				color: #f0f0e7;
-				font-size: 0.875rem;
-				font-weight: 400;
-				letter-spacing: -0.026rem;
 				padding: 3px 23px;
 			}
 		}
 	}
 	&__link {
+		width: 134px;
 		img {
 			width: 134px;
 			height: 80px;
 			border: 2px solid white;
 			object-fit: none;
 			object-position: center;
+			margin: 0 auto;
 		}
 	}
 }

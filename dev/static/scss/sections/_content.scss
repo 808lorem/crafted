@@ -7,7 +7,7 @@
 	&__block {
 		background: url(../img/general/content-block-bg.png);
 		box-sizing: border-box;
-		background-color: #f0f0e7;
+		background-color: $colorBtn;
 		width: 223px;
 		height: 308px;
 		border-width: 2px;
@@ -37,10 +37,7 @@
 			left: -11px;
 			top: 21px;
 			color: #e4e4db;
-			font-size: 1.625rem;
 			font-weight: 400;
-			text-transform: uppercase;
-			font-family: $fontOswald;
 			padding: 4px 0 0 20px;
 		}
 		&.more {
@@ -52,7 +49,6 @@
 					left: -17px;
 					top: 13px;
 					color: #ffffff;
-					font-size: 1.875rem;
 					font-weight: 400;
 					text-shadow: 0px 1px 0px #1f4457;
 					padding: 5px 0 0 32px
@@ -73,11 +69,10 @@
 			color: #616161;
 			font-size: 0.75rem;
 			font-weight: 400;
-			margin-bottom: 20px;
-			&:last-child {
-				margin-bottom: 0;
+			p {
+				margin-bottom: 20px;
 			}
-			&.block-italic {
+			.block-italic {
 				font-weight: 700;
 				font-style: italic;
 			}
@@ -85,7 +80,7 @@
 		&_link {
 			display: block;
 			@include sprite($s-content-btn);
-			color:  #f0f0e7;
+			color: #f0f0e7;
 			font-size: 0.875rem;
 			font-weight: 400;
 			text-align: center;
@@ -105,6 +100,8 @@
 			margin-right: 15px;
 			img {
 				border: 2px solid white;
+				width: 121px;
+				height: 76px;
 			}
 		}
 	}
