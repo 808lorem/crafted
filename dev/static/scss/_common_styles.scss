@@ -11,6 +11,12 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 0;
 }
 
+h1 {
+	text-transform: uppercase;
+	font-family: $fontOswald;
+	font-size: 2.25rem;
+}
+
 h2 {
 	text-transform: uppercase;
 	font-family: $fontOswald;
@@ -36,6 +42,18 @@ p {
 a {
     text-decoration: none;
     color: black;
+}
+
+.main-btn {
+	display: block;
+	@include sprite($s-content-btn);
+	color: #f0f0e7;
+	font-size: 0.875rem;
+	font-weight: 400;
+	text-align: center;
+	padding: 7px 0;
+	font-family: $fontOswald;
+	position: absolute;
 }
 
 audio,

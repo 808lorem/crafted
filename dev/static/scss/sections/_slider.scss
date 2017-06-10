@@ -1,5 +1,5 @@
 .slider {
-	padding: 42px 0 42+23px;
+	padding: 42px 0 4px;
 	position: relative;
 	&:before {
 		content: '';
@@ -10,19 +10,47 @@
 		top: 3px;
 		background: url(../img/general/border_dashed.png);
 	}
-	&:after {
-		content: '';
-		display: block;
-		height: 2px;
-		width: 940px;
-		position: absolute;
-		bottom: 0;
-		left: 50%;
-		transform: translateX(-50%);
-		background: url(../img/general/border_dashed.png);
+	&.mini {
+		.slider {
+			&__container {
+				&:after {
+					width: 646px;
+				}
+			}
+			&__border-bt {
+				width: 646px;
+			}
+			&__wrap {
+				&:after {
+					background: url(../img/general/slider_border-bt_mini.png);
+					width: 626px;
+				}
+			}
+			&__img {
+				width: 626px;
+				object-fit: cover;
+			}
+		}
+	}
+	&__container {
+		&:after {
+			content: '';
+			display: block;
+			height: 2px;
+			width: 940px;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	&__border-bt {
+		width: 928px;
+		padding-bottom: 61px;
+		border: 2px solid;
+		border-image: url(../img/general/border_dashed.png) 0 0 2 0 round;
 	}
 	&__wrap {
-		width: 928px;
 		height: 270px;
 		margin: 0 auto;
 		position: relative;

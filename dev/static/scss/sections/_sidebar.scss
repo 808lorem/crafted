@@ -1,0 +1,75 @@
+.sidebar {
+	position: absolute;
+	top: 210px;
+	right: 0;
+	background-image: url(../img/general/sidebar_bg.png);
+	z-index: 999;
+	&__container {
+		position: relative;
+		height: 100%;
+		width: 240px;
+		height: 812px;
+	}
+	&__block {
+		font-family: Arial;
+		color:  #393838;
+		font-size: 0.75rem;
+		font-style: italic;
+		text-align: left;
+	}
+	&__title {
+		position: absolute;
+		color: #ffffff;
+		font-weight: 400;
+		padding: 14px 0;
+		text-shadow: 0px 1px 0px #1f4457;
+		text-align: center;
+		left: -15px;
+		font-style: normal;
+		z-index: 99;
+		&_top {
+			@include sprite($s-sidebar_title);
+			top: -36px;
+			padding: 7px 0;
+		}
+		&_middle {
+			@include sprite($s-sidebar_title-2);
+			top: 296px;
+		}
+		&_bottom {
+			@include sprite($s-sidebar_title-3);
+			top: 632px;
+		}
+	}
+	&__content {
+		background-color: rgba(239, 239, 230, 0.73);
+		width: 226px;
+		height: 295px;
+		margin: 42px 7px;
+		padding: 27px 13px;
+		position: relative;
+		&_bottom {
+			font-weight: 600;
+		}
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 223px;
+			height: 294px;
+			border: 2px solid;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border-image: url(../img/general/border_dashed.png) 2 round;
+		}
+	}
+	&__text {
+		&_bottom {
+			margin: 0 19px 20px;
+			&:first-child {
+				margin-top: 60px;
+			}
+		}
+	}
+}
