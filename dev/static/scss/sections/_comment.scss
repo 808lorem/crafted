@@ -1,0 +1,54 @@
+.comment {
+	&__box {
+		width: 661px;
+	}
+	&__title {
+		color:  #309029;
+		text-shadow: 0px 1px 0px #ffffff;
+		text-transform: none;
+		letter-spacing: 1px;
+		border-bottom: 2px solid;
+		border-image: url(../img/general/border_dashed.png) 0 0 2 0 round;
+		padding-bottom: 3px;
+		margin-bottom: 20px;
+	}
+	&__flexbox {
+		display: flex;
+		padding-bottom: 48px;
+		&.under {
+			margin-left: 40px;
+		}
+	}
+	&__block {
+		&_img {
+			border: 1px solid white;
+			box-shadow: 4px 4px 0px 0px #facac7;
+			width: 61px;
+			height: 61px;
+			object-fit: none;
+			object-position: top left;
+			margin: 0 20px 7px 0;
+		}
+		&_username {
+			color:  #4c4946;
+			font-size: 0.625rem;
+			font-weight: 700;
+			font-style: italic;
+			letter-spacing: -0.016rem;
+			line-height: 1.8;
+		}
+		&_text {
+			color:  #616161;
+			font-size: 0.75rem;
+			background-image: url(../img/general/content-block-bg.png);
+			padding: 14px 22px 26px;
+			position: relative;
+		}
+		&_link {
+			position: absolute;
+			bottom: -36px;
+			right: 0;
+			@include sprite($s-comment-btn);
+		}
+	}
+}
