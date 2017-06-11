@@ -877,22 +877,22 @@ button {
       margin-left: 6px; }
       .header__social_link_email {
         background-image: url("../img/sprite/sprite.png");
-        background-position: -227px -252px;
+        background-position: -274px -252px;
         width: 28px;
         height: 28px; }
       .header__social_link_rss {
         background-image: url("../img/sprite/sprite.png");
-        background-position: -270px -252px;
+        background-position: -317px -252px;
         width: 27px;
         height: 27px; }
       .header__social_link_fb {
         background-image: url("../img/sprite/sprite.png");
-        background-position: -312px -252px;
+        background-position: -400px -252px;
         width: 26px;
         height: 27px; }
       .header__social_link_twitter {
         background-image: url("../img/sprite/sprite.png");
-        background-position: -353px -252px;
+        background-position: -359px -252px;
         width: 26px;
         height: 27px; }
   .header__form {
@@ -1107,7 +1107,7 @@ button {
       content: '';
       display: block;
       background-image: url("../img/sprite/sprite.png");
-      background-position: -345px -191px;
+      background-position: -384px -191px;
       width: 24px;
       height: 23px;
       position: absolute;
@@ -1117,7 +1117,7 @@ button {
       content: '';
       display: block;
       background-image: url("../img/sprite/sprite.png");
-      background-position: -384px -191px;
+      background-position: -345px -191px;
       width: 24px;
       height: 23px;
       position: absolute;
@@ -1205,7 +1205,7 @@ button {
       content: '';
       display: block;
       background-image: url("../img/sprite/sprite.png");
-      background-position: -345px -191px;
+      background-position: -384px -191px;
       width: 24px;
       height: 23px;
       position: absolute;
@@ -1215,12 +1215,34 @@ button {
       content: '';
       display: block;
       background-image: url("../img/sprite/sprite.png");
-      background-position: -384px -191px;
+      background-position: -345px -191px;
       width: 24px;
       height: 23px;
       position: absolute;
       bottom: -3px;
       right: -3px; }
+    .blog-content__block_commenta {
+      position: absolute;
+      top: 60px;
+      left: 28px;
+      color: #424242;
+      font-size: 0.75rem;
+      font-weight: 400;
+      font-family: "Homemade Apple", "Arial", sans-serif; }
+    .blog-content__block_icon-commenta {
+      position: absolute;
+      background-image: url("../img/sprite/sprite.png");
+      background-position: -227px -252px;
+      width: 32px;
+      height: 34px;
+      top: 24px;
+      left: 61px;
+      color: #464647;
+      font-size: 0.875rem;
+      font-weight: 400;
+      text-align: center;
+      font-family: "Oswald", "Arial", sans-serif;
+      padding: 8px 0; }
     .blog-content__block_title {
       color: #296d90;
       position: relative;
@@ -1344,6 +1366,16 @@ button {
     margin: 42px 7px;
     padding: 27px 13px;
     position: relative; }
+    .sidebar__content_flexbox {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-bottom: 30px; }
     .sidebar__content_bottom {
       font-weight: 600; }
     .sidebar__content:after {
@@ -1361,6 +1393,16 @@ button {
       -webkit-border-image: url(../img/general/border_dashed.png) 2 round;
            -o-border-image: url(../img/general/border_dashed.png) 2 round;
               border-image: url(../img/general/border_dashed.png) 2 round; }
+    .sidebar__content_img {
+      border: 3px solid;
+      -webkit-border-image: url(../img/general/border-post.png) 3 round;
+           -o-border-image: url(../img/general/border-post.png) 3 round;
+              border-image: url(../img/general/border-post.png) 3 round;
+      margin-right: 15px; }
+    .sidebar__content_tegs {
+      font-style: normal;
+      font-size: 0.875rem;
+      text-shadow: 0px 1px 0px #ffffff; }
   .sidebar__text_bottom {
     margin: 0 19px 20px; }
     .sidebar__text_bottom:first-child {
